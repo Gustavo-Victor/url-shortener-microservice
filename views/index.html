@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener Microservice | freeCodeCamp.org</title>
+    <!--icon-->
+    <link rel="icon" type="image/png" href="https://cdn.freecodecamp.org/universal/favicons/favicon-16x16.png" />
+    <!--styles-->
+    <link href="/public/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <main class="main">
+        <h1 class="title">URL Shortener Microservice</h1>
+
+        <form class="form" action="api/shorturl" method="POST">
+            <label for="url_input">URL:</label>
+            <input id="url_input" type="text" name="url" placeholder="https://www.freecodecamp.org/" />
+            <input type="submit" value="POST URL" />
+        </form>
+
+        <div class="explanation">
+            <h3>Example Usage:</h3>
+            <a href="/api/shorturl/3">[this_project_url]/api/shorturl/3</a>
+
+            <h3>Will Redirect to:</h3>
+            <a target="_blank" href="https://facebook.com">https://facebook.com/</a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Project By <a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a></p>
+
+        <p>Coded B <a href="https://github.com/Gustavo-Victor/" target="_blank">Gustavo Victor</a></p>
+    </footer>
+</body>
+
+</html>
