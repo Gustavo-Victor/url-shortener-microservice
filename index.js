@@ -59,8 +59,7 @@ app.get('/api/shorturl/:id', async function (req, res) {
         if (!document || document == null) {
             res.json({ error: "No short URL found for the given input" });
         } else {
-            const { original_url, short_url } = document;
-            res.json({ original_url, short_url });
+            res.redirect(document.original_url);
         }
     }
 });
